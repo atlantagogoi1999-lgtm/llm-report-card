@@ -30,5 +30,5 @@ Most AI evaluation focuses on metrics like ROUGE/BLEU. This tool adds:
 - **Practical feedback** (actionable improvement suggestions)
 
 ## About the Creator
-[Atlanta Gogoi] - PhD in English Literature with experience as an AI LLM Analyst at Innodata. 
+Atlanta Gogoi - PhD in English Literature with experience as an AI LLM Analyst at Innodata. 
 Specializing in bridging literary theory with AI text generation.
