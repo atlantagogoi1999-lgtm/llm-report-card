@@ -9,7 +9,7 @@ A tool to analyze AI-generated text using literary and linguistic principles.
 - Suggests improvements
 
 ## 🔧 How to Use
-1. Visit the [live demo](https://atlantagogoi.github.io/llm-report-card/)
+1. Visit the [live demo](https://atlantagogoi1999-lgtm.github.io/llm-report-card/)
 2. Paste AI-generated text
 3. Click "Generate Report Card"
 4. See detailed analysis
