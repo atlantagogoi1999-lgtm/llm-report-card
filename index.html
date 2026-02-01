@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LLM Output Report Card</title>
+    <style>
+        body { font-family: Arial; max-width: 800px; margin: 40px auto; padding: 20px; }
+        textarea { width: 100%; height: 150px; margin: 10px 0; }
+        .grade { font-size: 24px; color: green; font-weight: bold; }
+        .insight { background: #f0f0f0; padding: 15px; margin: 10px 0; border-left: 4px solid blue; }
+    </style>
+</head>
+<body>
+    <h1>📝 LLM Output Report Card</h1>
+    <p><i>By: [Atlanta Gogoi], PhD in English & AI LLM Analyst</i></p>
+    
+    <textarea id="aiText" placeholder="Paste AI-generated text here..."></textarea>
+    <button onclick="analyzeText()">Generate Report Card</button>
+    
+    <div id="reportCard" style="display:none;">
+        <h2>Report Card</h2>
+        <div class="grade">Overall Grade: <span id="grade">B+</span></div>
+        
+        <h3>📊 Scores:</h3>
+        <p>Coherence: 7/10</p>
+        <p>Creativity: 6/10</p>
+        <p>Narrative Flow: 5/10</p>
+        <p>Emotional Impact: 4/10</p>
+        
+        <h3>🔍 Literary Analysis:</h3>
+        <div class="insight" id="insight1"></div>
+        <div class="insight" id="insight2"></div>
+        
+        <h3>💡 Recommendations:</h3>
+        <ul>
+            <li>Add stronger narrative hooks</li>
+            <li>Vary sentence structure</li>
+            <li>Include sensory details</li>
+        </ul>
+    </div>
+
+    <script>
+    function analyzeText() {
+        // Get the text
+        var text = document.getElementById('aiText').value;
+        
+        // Show report card
+        document.getElementById('reportCard').style.display = 'block';
+        
+        // Your analysis logic (simplified)
+        if(text.length < 100) {
+            document.getElementById('grade').innerText = 'C-';
+            document.getElementById('insight1').innerText = '❌ Too brief for meaningful narrative development';
+        } else {
+            document.getElementById('grade').innerText = 'B+';
+            document.getElementById('insight1').innerText = '✅ Good base structure but lacks character depth';
+        }
+        
+        // Example insight based on your PhD
+        document.getElementById('insight2').innerText = 
+            '📖 Literary Note: This follows a linear narrative but misses the three-act structure common in effective storytelling.';
+              // Add YOUR literary analysis here
+        if(text.includes('but') || text.includes('however')) {
+            document.getElementById('insight1').innerText += 
+                '\n✓ Contains dialectical tension (Hegelian structure)';
+        }
+        
+        if(text.includes('like') || text.includes('as if')) {
+            document.getElementById('insight2').innerText += 
+                '\n✓ Emplows metaphorical language (Richards’ tenor-vehicle model)';
+    }
+    </script>
+</body>
+</html>
